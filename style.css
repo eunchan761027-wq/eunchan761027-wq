@@ -24,14 +24,14 @@ body {
     margin-bottom: 24px;
 }
 
-.header h1  {
+.header h1 {
     font-size: 28px;
     margin-bottom: 4px;
 }
 
 .subtitle {
     font-size: 14px;
-    color: #6b7288;
+    color: #6b7280;
 }
 
 .container {
@@ -54,9 +54,14 @@ body {
     grid-template-columns: 110px 1fr;
     gap: 20px;
     align-items: center;
+    transition: transform 0.2s ease;
 }
 
-.avater {
+.profile-card:hover {
+    transform: translateY(-4px);
+}
+
+.avatar {
     width: 96px;
     height: 96px;
     border-radius: 999px;
@@ -104,7 +109,7 @@ body {
 }
 
 .info-value {
-    font-weight: 2px;
+    font-weight: 600;
 }
 
 .section-card h3 {
@@ -137,7 +142,6 @@ body {
 .footer {
     text-align: center;
     margin-top: 12px;
-    margin-top: 12px;
     color: #9ca3af;
 }
 
@@ -145,9 +149,6 @@ body {
     .profile-card {
         grid-template-columns: 1fr;
         text-align: left;
-    }
-
-    .profile-card {
         padding: 20px 16px 18px;
     }
 
